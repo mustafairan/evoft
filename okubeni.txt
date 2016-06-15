@@ -1,0 +1,17 @@
+UYARI user preference değerlerinde 0 bulunmaz. Veri tabanında bulunamayan değerler sıfır alınmalıdır (alınmaktadır).
+Expertise hesabı dahil oraya kadar sıkıntısız çalışır. Dosya işlemi buraya kadar yok. Veritabanı girdi çıktısı yapılmaktadır.
+association ve preference (ve extended preference) hesaplandıktan sonra testuses.txt dosyasında yer alan kullanıcı ikilileri için eptr (newmain.py tarafından) hesaplanmaktadır. Değerler eptrs.txt dosyasına yazdırılmaktadır.
+Rastgele kullanıcı ikilisi oluşturmak için rastgeleikilioluştur.py kullanılabilir.
+
+
+
+
+veritabanının yapısı
+    *her ürün yalnız bir kategoriye dahil olabilir
+    uygulama tabloları oluşturmaz,sadece doldurur. Tabloların doğru yapıda önceden oluşturulmuş olmasına dikkat edin.Tablolar tablo1.png dosyasındaki gibi olmalıdır.
+    Trust ve rating tabloları datasetteki verilerle doldurulmalıdır. Sonrasında diğer tablolar uygulama tarafından doldurulur.
+    ufak örnek veritabanı ornek.sql dosyasında. sadece rating verileri kalacak şekilde diğer tablolar boşaltılıp uygulamaya hesaplattırılabilir. Şema adı fakedb dir.
+
+dataset değişirse kategori sayısını ve idlerini (myfunctions clasında) ayarlamayı unutmayın. Gerekirse bu değerler için birer fonksiyon yazılarak dinamik hale getirilebilir.
+
+Diğer klasöründe uygulamanın eski hali ve ekstra birkaç script var. ihtiyaç duyulursa bulunsun diye koydum. Çok gereği yok aslında.
